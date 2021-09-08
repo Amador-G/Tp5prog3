@@ -13,6 +13,20 @@
         .auto-style2 {
             height: 23px;
         }
+        .auto-style3 {
+            width: 211px;
+        }
+        .auto-style4 {
+            height: 23px;
+            width: 211px;
+        }
+        .auto-style5 {
+            width: 187px;
+        }
+        .auto-style6 {
+            height: 23px;
+            width: 187px;
+        }
     </style>
 </head>
 <body>
@@ -20,10 +34,10 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td>
+                    <td class="auto-style3">
                         <asp:HyperLink ID="hlAgregarSucursales" runat="server" NavigateUrl="~/AgregarSucursal.aspx">Agregar Sucursales</asp:HyperLink>
                     </td>
-                    <td>
+                    <td class="auto-style5">
                         <asp:HyperLink ID="hlListadoDeSucursales" runat="server" NavigateUrl="~/ListarSucursal.aspx">Listado de Sucursales</asp:HyperLink>
                     </td>
                     <td>
@@ -31,88 +45,88 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-size: xx-large; font-weight: bold;">GRUPO N° 1</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="font-size: x-large">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3" style="font-size: xx-large; font-weight: bold;">GRUPO N° 1</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="font-size: x-large; font-weight: bold;">Agregar Sucursal</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3" style="font-size: x-large">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Nombre Sucursal :</td>
-                    <td class="auto-style2">
+                    <td class="auto-style3" style="font-size: x-large; font-weight: bold;">Agregar Sucursal</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Nombre Sucursal :</td>
+                    <td class="auto-style6">
                         <asp:TextBox ID="txtNombreSucursal" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style2">
-                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" ErrorMessage="Ingrese un nombre." ValidationGroup="G1">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" ErrorMessage="Ingrese un nombre para la sucursal" ValidationGroup="Grupo1">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>Descripción :</td>
-                    <td>
+                    <td class="auto-style3">Descripción :</td>
+                    <td class="auto-style5">
                         <asp:TextBox ID="txtDescripcion" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion" ErrorMessage="Ingrese una Descripción" ValidationGroup="G1">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion" ErrorMessage="Ingrese una Descripción" ValidationGroup="Grupo1">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>Provincia :</td>
-                    <td>
+                    <td class="auto-style3">Provincia :</td>
+                    <td class="auto-style5">
                         <asp:DropDownList ID="ddlProvincias" runat="server">
                         </asp:DropDownList>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td>Dirección : </td>
-                    <td>
+                    <td class="auto-style3">Dirección : </td>
+                    <td class="auto-style5">
                         <asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" ErrorMessage="ingrese una direccion" ValidationGroup="G1">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Ingrese una Dirección" ValidationGroup="Grupo1">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2"></td>
-                    <td class="auto-style2"></td>
-                    <td class="auto-style2">
-                        <asp:ValidationSummary ID="vsingresos" runat="server" ValidationGroup="G1" />
-                    </td>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" ValidationGroup="Grupo1" />
+                    </td>
                     <td>
-                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" ValidationGroup="G1" />
+                        <asp:ValidationSummary ID="vsErrores" runat="server" ValidationGroup="Grupo1" />
                     </td>
-                    <td>&nbsp;</td>
                 </tr>
             </table>
         </div>
