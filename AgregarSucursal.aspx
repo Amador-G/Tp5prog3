@@ -117,12 +117,14 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style6"></td>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="lblCargaExitosa" runat="server"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style5">
-                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" ValidationGroup="Grupo1" />
+                        <asp:Button ID="btnGuardar" runat="server" Text="Guardar" ValidationGroup="Grupo1" OnClick="GuardarSucursal" />
                     </td>
                     <td>
                         <asp:ValidationSummary ID="vsErrores" runat="server" ValidationGroup="Grupo1" />
