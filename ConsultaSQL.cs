@@ -12,7 +12,7 @@ namespace Tp5Prog3
         
         public DataSet Consulta (string Consulta)
         {
-            string bdSucursales = "Data Source=LocalHost\\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True";
+            string bdSucursales = "Data Source=laptop-d5dkhvl7\\sqlexpress01;Initial Catalog=BDSucursales;Integrated Security=True";
             SqlConnection cn = new SqlConnection(bdSucursales);
             cn.Open();
             SqlCommand cmd = new SqlCommand(Consulta, cn);
@@ -24,7 +24,7 @@ namespace Tp5Prog3
         }
         public int  ConsultaFilas (string Consulta)
         {
-            string bdSucursales = "Data Source=LocalHost\\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True";
+            string bdSucursales = "Data Source=laptop-d5dkhvl7\\sqlexpress01;Initial Catalog=BDSucursales;Integrated Security=True";
             SqlConnection cn = new SqlConnection(bdSucursales);
             cn.Open();
             SqlCommand cmd = new SqlCommand(Consulta, cn);

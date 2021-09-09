@@ -26,15 +26,15 @@ namespace Tp5Prog3
         {
             ConsultaSQL Consulta = new ConsultaSQL();
             ConsultaSQL Consulta2 = new ConsultaSQL();
-            string id_Sucursal =  Convert.ToInt32(Consulta2.Consulta("select count (Id_Sucursal) from Sucursal"));
-            if((Consulta.ConsultaFilas("Insert into Sucursal (NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal, DireccionSucursal,Id_Sucursal) values ('" + txtNombreSucursal.Text + "'," + txtDescripcion.Text + "'," + ddlProvincias.SelectedValue + "'," + txtDireccion.Text + "'," + id_Sucursal)!=0))
+            //string id_Sucursal =  Convert.ToInt32(Consulta2.Consulta("select count (Id_Sucursal) from Sucursal"));
+            /*if((Consulta.ConsultaFilas("Insert into Sucursal (NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal, DireccionSucursal,Id_Sucursal) values ('" + txtNombreSucursal.Text + "'," + txtDescripcion.Text + "'," + ddlProvincias.SelectedValue + "'," + txtDireccion.Text + "'," + id_Sucursal)!=0))
             {
                 lblCargaExitosa.Text = "Cargado con Exito!";
             }
             else
             {
                 lblCargaExitosa.Text = "Error al cargar el registro";
-            }
+            }*/
         }
     }
 }
