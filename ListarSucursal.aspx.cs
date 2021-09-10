@@ -14,7 +14,7 @@ namespace Tp5Prog3
     {
         public void consultaTabla(string consulta)
         {
-            string ruta = "Data Source=laptop-d5dkhvl7\\sqlexpress01;Initial Catalog=BDSucursales;Integrated Security=True";
+            string ruta = "Data Source=DESKTOP-6VN45UU\\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True";
 
             DataSet ds = new DataSet();
             SqlConnection cn = new SqlConnection(ruta);
