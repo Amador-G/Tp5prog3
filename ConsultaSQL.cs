@@ -22,7 +22,7 @@ namespace Tp5Prog3
             cn.Close();
             return ds;
         }
-        public int  ConsultaFilas (string Consulta)
+        public int  ConsultaFilas (string Consulta)//Devuelve cuantas filas se modificaron(eliminar,agregar,modificar)
         {
             string bdSucursales = "Data Source=LocalHost\\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True";
             SqlConnection cn = new SqlConnection(bdSucursales);

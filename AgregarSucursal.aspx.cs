@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Tp5Prog3
 {
@@ -25,9 +27,7 @@ namespace Tp5Prog3
         protected void GuardarSucursal(object sender, EventArgs e)
         {
             ConsultaSQL Consulta = new ConsultaSQL();
-            ConsultaSQL Consulta2 = new ConsultaSQL();
-            string id_Sucursal =  Convert.ToInt32(Consulta2.Consulta("select count (Id_Sucursal) from Sucursal"));
-            if((Consulta.ConsultaFilas("Insert into Sucursal (NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal, DireccionSucursal,Id_Sucursal) values ('" + txtNombreSucursal.Text + "'," + txtDescripcion.Text + "'," + ddlProvincias.SelectedValue + "'," + txtDireccion.Text + "'," + id_Sucursal)!=0))
+            if ((Consulta.ConsultaFilas("Insert into Sucursal (NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal, DireccionSucursal) values ('" + txtNombreSucursal.Text + "','" + txtDescripcion.Text + "','" + ddlProvincias.SelectedValue + "','" + txtDireccion.Text + "')") != 0))
             {
                 lblCargaExitosa.Text = "Cargado con Exito!";
             }
