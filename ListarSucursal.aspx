@@ -32,15 +32,15 @@
             height: 59px;
         }
         .auto-style13 {
-            width: 319px;
+            width: 370px;
             height: 47px;
         }
         .auto-style14 {
-            width: 319px;
+            width: 370px;
             height: 56px;
         }
         .auto-style15 {
-            width: 319px;
+            width: 370px;
             height: 59px;
         }
     </style>
@@ -70,6 +70,9 @@
                     <td class="auto-style15">
                         <asp:TextBox ID="txtIdSucursal" runat="server" Width="114px"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtIdSucursal" ValidationExpression="^\d+$">Por favor ingrese un numero</asp:RegularExpressionValidator>
+                        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtIdSucursal">Por favor ingresar el ID de la sucursal</asp:RequiredFieldValidator>
                         <br />
                     </td>
                     <td class="auto-style12">

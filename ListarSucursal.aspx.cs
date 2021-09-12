@@ -34,6 +34,7 @@ namespace Tp5Prog3
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
+           
             string id = txtIdSucursal.Text;
             consultaTabla("select Id_Sucursal,NombreSucursal,DescripcionSucursal,id_ProvinciaSucursal,DireccionSucursal from Sucursal where Id_Sucursal= "+id);
             txtIdSucursal.Text = "";
