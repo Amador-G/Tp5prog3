@@ -67,7 +67,7 @@
             <tr>
                 <td class="auto-style8">Ingrese ID Sucursal:</td>
                 <td>
-                    <asp:TextBox ID="txtID" runat="server" Width="285px"></asp:TextBox>
+                    <asp:TextBox ID="txtID" runat="server" Width="285px" ValidationGroup="G1"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="btnID" runat="server" OnClick="btnID_Click" Text="Eliminar" />
                 </td>
@@ -78,7 +78,7 @@
             </tr>
             <tr>
                 <td class="auto-style8">
-                    <asp:Label ID="Mensaje" runat="server"></asp:Label>
+                    <asp:Label ID="lblMensajeEliminado" runat="server"></asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>

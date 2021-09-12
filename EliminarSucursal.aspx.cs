@@ -19,10 +19,16 @@ namespace Tp5Prog3
         protected void btnID_Click(object sender, EventArgs e)
         {
             ConsultaSQL query = new ConsultaSQL();
-            
-            query.Consulta("delete from Sucursal where Id_Sucursal=" + txtID.Text);
-            
-            txtID.Text = "";
+            if((query.ConsultaFilas("delete from Sucursal where Id_Sucursal=" + txtID.Text))!=0)
+            {
+                lblMensajeEliminado.Text = "Sucursal Eliminado con exito.";
+                txtID.Text = "";
+            }
+            else
+            {
+                lblMensajeEliminado.Text = "Error al borrar Sucursal";
+                txtID.Text = "";
+            }                      
         }
     }
 }
