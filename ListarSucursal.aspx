@@ -32,15 +32,15 @@
             height: 59px;
         }
         .auto-style13 {
-            width: 319px;
+            width: 370px;
             height: 47px;
         }
         .auto-style14 {
-            width: 319px;
+            width: 370px;
             height: 56px;
         }
         .auto-style15 {
-            width: 319px;
+            width: 370px;
             height: 59px;
         }
     </style>

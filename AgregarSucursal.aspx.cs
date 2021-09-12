@@ -30,11 +30,21 @@ namespace Tp5Prog3
             if ((Consulta.ConsultaFilas("Insert into Sucursal (NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal, DireccionSucursal) values ('" + txtNombreSucursal.Text + "','" + txtDescripcion.Text + "','" + ddlProvincias.SelectedValue + "','" + txtDireccion.Text + "')") != 0))
             {
                 lblCargaExitosa.Text = "Cargado con Exito!";
+                LimpiezaCampos();
             }
             else
             {
                 lblCargaExitosa.Text = "Error al cargar el registro";
+                LimpiezaCampos();
             }
+        }
+
+        private void LimpiezaCampos()
+        {
+            txtNombreSucursal.Text = "";
+            txtDescripcion.Text = "";
+            txtDireccion.Text = "";
+            ddlProvincias.SelectedIndex = 0;
         }
     }
 }

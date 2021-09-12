@@ -69,12 +69,14 @@
                 <td>
                     <asp:TextBox ID="txtID" runat="server" Width="285px" ValidationGroup="G1"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="btnID" runat="server" OnClick="btnID_Click" Text="Eliminar" />
+                    <asp:Button ID="btnID" runat="server" OnClick="btnID_Click" Text="Eliminar" ValidationGroup="G1" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style8">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RegularExpressionValidator ID="revIDSuc" runat="server" ControlToValidate="txtID" ValidationExpression="^\d+$" ValidationGroup="G1">Valor Incorrecto</asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style8">
