@@ -71,9 +71,6 @@
                         <asp:TextBox ID="txtIdSucursal" runat="server" Width="114px"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtIdSucursal" ValidationExpression="^\d+$">Por favor ingrese un numero</asp:RegularExpressionValidator>
                         <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtIdSucursal">Por favor ingresar el ID de la sucursal</asp:RequiredFieldValidator>
-                        <br />
                     </td>
                     <td class="auto-style12">
                         <asp:Button ID="btnFiltrar" runat="server" OnClick="btnFiltrar_Click" Text="Filtrar" />
