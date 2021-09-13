@@ -99,7 +99,7 @@
                         </asp:DropDownList>
                     </td>
                     <td>
-                        <asp:CompareValidator ID="cvProvincias" runat="server" ControlToValidate="ddlProvincias" ErrorMessage="Seleccione una Provincia" ValidationGroup="Grupo1" ValueToCompare="[Seleccionar]">*</asp:CompareValidator>
+                        <asp:RequiredFieldValidator ID="rfvProvincias" runat="server" ControlToValidate="ddlProvincias" ErrorMessage="Seleccione Provincia" ValidationGroup="Grupo1">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>

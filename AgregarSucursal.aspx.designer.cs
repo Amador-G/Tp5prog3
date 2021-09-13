@@ -96,13 +96,13 @@ namespace Tp5Prog3
         protected global::System.Web.UI.WebControls.DropDownList ddlProvincias;
 
         /// <summary>
-        /// Control cvProvincias.
+        /// Control rfvProvincias.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator cvProvincias;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProvincias;
 
         /// <summary>
         /// Control txtDireccion.
