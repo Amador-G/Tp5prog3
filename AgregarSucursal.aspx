@@ -95,10 +95,12 @@
                 <tr>
                     <td class="auto-style3">Provincia :</td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="ddlProvincias" runat="server">
+                        <asp:DropDownList ID="ddlProvincias" runat="server" AutoPostBack="True" EnableTheming="False" ValidationGroup="Grupo1">
                         </asp:DropDownList>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:CompareValidator ID="cvProvincias" runat="server" ControlToValidate="ddlProvincias" ErrorMessage="Seleccione una Provincia" ValidationGroup="Grupo1" ValueToCompare="[Seleccionar]">*</asp:CompareValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style4"></td>
